@@ -34,10 +34,10 @@ export default function HomeScreen() {
   };
 
   const handleCellPress = (number: number) => {
-    // Handle the selected number (green highlight)
+   
     setSelectedNumber(number);
     
-    // Handle the selected cells (yellow boxes)
+ 
     if (selectedCells.includes(number)) {
       // If already selected, remove it (unselect)
       setSelectedCells(selectedCells.filter(cell => cell !== number));
